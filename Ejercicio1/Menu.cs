@@ -34,6 +34,12 @@ namespace Ejercicio1
                         case 3:
                             Seccion3.Ejecutar();
                             break;
+                        case 4:
+                            Seccion4.Ejecutar();
+                            break;
+                        case 5:
+                            Seccion5.Ejecutar();
+                            break;
                         default:
                             Console.WriteLine("Seccion invalida");
                             break;
@@ -50,7 +56,7 @@ namespace Ejercicio1
             int i = 1;
             int a = i;
             Console.WriteLine("Elija una seccion:");
-            for(; i <= 3; i++)
+            for(; i <= 5; i++)
             {
                 Console.WriteLine("{0}. Ejercicios {1}-{2}", i, a, i * 10);
                 a += 10;

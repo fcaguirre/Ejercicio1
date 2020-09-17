@@ -6,7 +6,7 @@ namespace Ejercicio1
     {
         static void Main()
         {
-            Config config = new Config();
+            //Config config = new Config();
             Menu menu = new Menu();
             menu.Ejecutar();
         }
