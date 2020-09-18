@@ -25,42 +25,43 @@ namespace Ejercicio1
             };
             while (true)
             {
-                Extras.Menu(opciones);
+                Extras.MenuSeccion(opciones);
                 if (int.TryParse(Extras.ElegirOp(), out int opc))
                 {
+                    Console.Clear();
                     switch (opc)
                     {
                         case 0:
                             return;
                         case 1:
-                            Seccion2.Bono();
+                            Bono();
                             break;
                         case 2:
-                            Seccion2.MidN();
+                            MidN();
                             break;
                         case 3:
-                            Seccion2.TarifaT();
+                            TarifaT();
                             break;
                         case 4:
-                            Seccion2.Triangulos();
+                            Triangulos();
                             break;
                         case 5:
-                            Seccion2.EjP2();
+                            EjP2();
                             break;
                         case 6:
-                            Seccion2.DotW();
+                            DotW();
                             break;
                         case 7:
-                            Seccion2.EstadoCivil();
+                            EstadoCivil();
                             break;
                         case 8:
-                            Seccion2.Calificacion();
+                            Calificacion();
                             break;
                         case 9:
-                            Seccion2.EjP3();
+                            EjP3();
                             break;
                         case 10:
-                            Seccion2.TMul();
+                            TMul();
                             break;
                         default:
                             Console.WriteLine("Ejercicio invalido");

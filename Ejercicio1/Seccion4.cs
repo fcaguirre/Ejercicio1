@@ -25,42 +25,43 @@ namespace Ejercicio1
             };
             while (true)
             {
-                Extras.Menu(opciones);
+                Extras.MenuSeccion(opciones);
                 if (int.TryParse(Extras.ElegirOp(), out int opc))
                 {
+                    Console.Clear();
                     switch (opc)
                     {
                         case 0:
                             return;
                         case 1:
-                            Seccion4.CVocalesCerradas();
+                            CVocalesCerradas();
                             break;
                         case 2:
-                            Seccion4.EstXVoc();
+                            EstXVoc();
                             break;
                         case 3:
-                            Seccion4.Factorial();
+                            Factorial();
                             break;
                         case 4:
-                            Seccion4.SerieNum();
+                            SerieNum();
                             break;
                         case 5:
-                            Seccion4.SucesionNCuadros();
+                            SucesionNCuadros();
                             break;
                         case 6:
-                            Seccion4.MovFrase();
+                            MovFrase();
                             break;
                         case 7:
-                            Seccion4.MovCCH();
+                            MovCCH();
                             break;
                         case 8:
-                            Seccion4.MovCCV();
+                            MovCCV();
                             break;
                         case 9:
-                            Seccion4.EjP4();
+                            EjP4();
                             break;
                         case 10:
-                            Seccion4.TablaMulW();
+                            TablaMulW();
                             break;
                         default:
                             Console.WriteLine("Ejercicio invalido");
@@ -169,9 +170,9 @@ namespace Ejercicio1
                 FAC = 1;
                 for (F = 1; F <= K; F++)
                 {
-                    FAC = FAC * F;
+                    FAC *= F;
                 }
-                RESUL = RESUL + (K / FAC);
+                RESUL += (K / FAC);
             }
             Console.WriteLine("RESULTADO DE LA SERIE ES: " + RESUL);
             Console.Write("Pulse una Tecla:"); Console.ReadLine();

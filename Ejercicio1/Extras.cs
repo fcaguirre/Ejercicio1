@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
     class Extras
     {
-        public static void Menu(String[] opciones) 
+        public static void MenuSeccion(String[] opciones) 
         {
             int o = 1;
             Console.Clear();

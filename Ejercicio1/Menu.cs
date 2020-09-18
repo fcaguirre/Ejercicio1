@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
@@ -23,7 +19,7 @@ namespace Ejercicio1
                     switch (opc)
                     {
                         case 0:
-                            this.Salir();
+                            Salir();
                             break;
                         case 1:
                             Seccion1.Ejecutar();

@@ -25,42 +25,43 @@ namespace Ejercicio1
             };
             while (true)
             {
-                Extras.Menu(opciones);
+                Extras.MenuSeccion(opciones);
                 if (int.TryParse(Extras.ElegirOp(), out int opc))
                 {
+                    Console.Clear();
                     switch (opc)
                     {
                         case 0:
                             return;
                         case 1:
-                            Seccion3.PresupuestoAAH();
+                            PresupuestoAAH();
                             break;
                         case 2:
-                            Seccion3.SumaNPI();
+                            SumaNPI();
                             break;
                         case 3:
-                            Seccion3.TMul2();
+                            TMul2();
                             break;
                         case 4:
-                            Seccion3.SumNNum();
+                            SumNNum();
                             break;
                         case 5:
-                            Seccion3.MmNNum();
+                            MmNNum();
                             break;
                         case 6:
-                            Seccion3.Fibonacci();
+                            Fibonacci();
                             break;
                         case 7:
-                            Seccion3.CalEstudiantes();
+                            CalEstudiantes();
                             break;
                         case 8:
-                            Seccion3.RandomNyCASCII();
+                            RandomNyCASCII();
                             break;
                         case 9:
-                            Seccion3.StringF();
+                            StringF();
                             break;
                         case 10:
-                            Seccion3.SimDClock();
+                            SimDClock();
                             break;
                         default:
                             Console.WriteLine("Ejercicio invalido");

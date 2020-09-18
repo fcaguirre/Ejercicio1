@@ -26,42 +26,43 @@ namespace Ejercicio1
             };
             while (true)
             {
-                Extras.Menu(opciones);
+                Extras.MenuSeccion(opciones);
                 if (int.TryParse(Extras.ElegirOp(), out int opc))
                 {
+                    Console.Clear();
                     switch (opc)
                     {
                         case 0:
                             return;
                         case 1:
-                            Seccion1.Inv2C();
+                            Inv2C();
                             break;
                         case 2:
-                            Seccion1.Inv2C();
+                            Inv3C();
                             break;
                         case 3:
-                            Seccion1.OpBasicas();
+                            OpBasicas();
                             break;
                         case 4:
-                            Seccion1.CompR();
+                            CompR();
                             break;
                         case 5:
-                            Seccion1.BasFMath();
+                            BasFMath();
                             break;
                         case 6:
-                            Seccion1.FormOut();
+                            FormOut();
                             break;
                         case 7:
-                            Seccion1.EjP1();
+                            EjP1();
                             break;
                         case 8:
-                            Seccion1.Max2N();
+                            Max2N();
                             break;
                         case 9:
-                            Seccion1.Max3N();
+                            Max3N();
                             break;
                         case 10:
-                            Seccion1.Desglose();
+                            Desglose();
                             break;
                         default:
                             Console.WriteLine("Ejercicio invalido");
@@ -258,7 +259,7 @@ namespace Ejercicio1
             MAY = NUM1; MEN = NUM1;
             if ((NUM2 > MAY)) MAY = NUM2;
             if ((NUM3 > MAY)) MAY = NUM3;
-            if ((NUM2 > MEN)) MEN = NUM2;
+            if ((NUM2 < MEN)) MEN = NUM2;
             if ((NUM3 < MEN)) MEN = NUM3;
             Console.WriteLine("MAYOR ES:" + MAY);
             Console.WriteLine("MENOR ES:" + MEN);

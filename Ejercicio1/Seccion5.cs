@@ -25,42 +25,43 @@ namespace Ejercicio1
             };
             while (true)
             {
-                Extras.Menu(opciones);
+                Extras.MenuSeccion(opciones);
                 if (int.TryParse(Extras.ElegirOp(), out int opc))
                 {
+                    Console.Clear();
                     switch (opc)
                     {
                         case 0:
                             return;
                         case 1:
-                            Seccion5.TablasMulW();
+                            TablasMulW();
                             break;
                         case 2:
-                            Seccion5.CompNPrimo();
+                            CompNPrimo();
                             break;
                         case 3:
-                            Seccion5.FactoresPrimosN();
+                            FactoresPrimosN();
                             break;
                         case 4:
-                            Seccion5.GenerarNnPrimos();
+                            GenerarNnPrimos();
                             break;
                         case 5:
-                            Seccion5.EjP5();
+                            EjP5();
                             break;
                         case 6:
-                            Seccion5.VerifClave3Int();
+                            VerifClave3Int();
                             break;
                         case 7:
-                            Seccion5.GenNAl10_30();
+                            GenNAl10_30();
                             break;
                         case 8:
-                            Seccion5.JuegoAdN();
+                            JuegoAdN();
                             break;
                         case 9:
-                            Seccion5.ControlFac();
+                            ControlFac();
                             break;
                         case 10:
-                            Seccion5.VotXSector();
+                            VotXSector();
                             break;
                         default:
                             Console.WriteLine("Ejercicio invalido");
